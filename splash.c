@@ -1,25 +1,30 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-void delay(int number_of_seconds);
 
-void splash_screen (void);
-int main ()
+
+ void splash_screen(void)
+
 {
 
-splash_screen();
+           printf   ("                       ######     #    #     # #    #      #       ######    ###   \n");
+           printf   ("                       #     #   # #   ##    # #   #       #    #  #     #  #   #  \n");
+           printf   ("                       #     #  #   #  # #   # #  #        #    #        # #     # \n");
+           printf   ("                       ######  ####### #  #  # ####        ######  ######  #     # \n");
+           printf   ("                       #     # #     # #   # # #   #            #  #        #   #  \n");
+           printf   ("                       ######  #     # #    ## #    #           #  #######   ###   \n");
+           printf   ("\n\n");
 
-delay(3);
 
-system("clear");
+           printf (  "                         #    # ###### #       ####   ####  #    # ######          \n");
+           printf (  "                         #    # #      #      #    # #    # ##  ## #               \n");
+           printf (  "                         #  # # #####  #      #      #    # # ## # #####           \n");
+           printf (  "                         ##  ## #      #      #      #    # #    # #               \n");
+           printf (  "                         #    # ###### ######  ####   ####  #    # ######          \n");
+           printf ("\n\n");
 
 
-getch ();
 }
-
-
 void delay(int number_of_seconds)
-{
+
+   {
     // Converting time into milli_seconds
     int milli_seconds = 1000 * number_of_seconds;
 
@@ -30,26 +35,6 @@ void delay(int number_of_seconds)
     while (clock() < start_time + milli_seconds);
 
 
-}
-void splash_screen(void)
-{
+   }
 
-           printf   ("              ######     #    #     # #    #      #       ######    ###   \n");
-           printf   ("              #     #   # #   ##    # #   #       #    #  #     #  #   #  \n");
-           printf   ("              #     #  #   #  # #   # #  #        #    #        # #     # \n");
-           printf   ("              ######  ####### #  #  # ####        ######  ######  #     # \n");
-           printf   ("              #     # #     # #   # # #   #            #  #        #   #  \n");
-           printf   ("              ######  #     # #    ## #    #           #  #######   ###   \n");
-           printf   ("\n\n");
-
-
-           printf (  "                 #    # ###### #       ####   ####  #    # ######          \n");
-           printf (  "                 #    # #      #      #    # #    # ##  ## #               \n");
-           printf (  "                 #  # # #####  #      #      #    # # ## # #####           \n");
-           printf (  "                 ##  ## #      #      #      #    # #    # #               \n");
-           printf (  "                 #    # ###### ######  ####   ####  #    # ######          \n");
-           printf ("\n\n");
-
-
-}
 
