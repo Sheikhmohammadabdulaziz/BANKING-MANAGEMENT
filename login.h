@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #define MAX_LENGTH 100
-struct info
+struct info    ///structure///
 {
     int amount;
     int wit_amount;
