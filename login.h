@@ -35,7 +35,8 @@ struct info
     ///Get username and password from the user
     char inputUsername[MAX_LENGTH];
     char inputPassword[MAX_LENGTH];
-
+    while(1)
+    {
     printf("\n\t\tENTER USERNAME: ");
     scanf("%s",inputUsername);
 
@@ -46,18 +47,21 @@ struct info
     if (strcmp(person.username,inputUsername) == 0 && strcmp(person.password,inputPassword) == 0)
     {
         printf("\n----------------------------------------------------------\n");
-        printf("\t\t<Login successful! please wait>\n");
+        printf("<Login successful! please wait>\n");
+        printf("Uploading the next page...\n");
 
     }
 
     else
 
     {
-        printf("\n\t\t<Invalid username or password>\n");
-        printf("\n\t\t<please try again>");
-        return 0;
+        printf("\n----------------------------------------------------------\n");
+        printf("\n<Invalid username or password>\n");
+        printf("\n<please try again>");
+        printf("\n----------------------------------------------------------\n");
+      
 
-
+    }
     }
 
 }
