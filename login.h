@@ -46,9 +46,10 @@ struct info    ///structure///
     ///Compare the input with stored username and password
     if (strcmp(person.username,inputUsername) == 0 && strcmp(person.password,inputPassword) == 0)
     {
+        
+        printf("<\n\n\t\tLogin successful! please wait>\n");
+        printf("\n\t\tUploading the next page...\n");
         printf("\n----------------------------------------------------------\n");
-        printf("<Login successful! please wait>\n");
-        printf("Uploading the next page...\n");
 
     }
 
@@ -56,8 +57,8 @@ struct info    ///structure///
 
     {
         printf("\n----------------------------------------------------------\n");
-        printf("\n<Invalid username or password>\n");
-        printf("\n<please try again>");
+        printf("\n<Invalid username or password>....\n");
+        printf("\n<please try again>....");
         printf("\n----------------------------------------------------------\n");
       
 
