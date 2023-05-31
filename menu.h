@@ -211,7 +211,7 @@ int main()
        void last_details()
 
     {
-        printf("\n\nNAME :%s\n",username);
+        printf("\n\nNAME :SHEIKH MOHMMAD ABDUL AZIZ\n");
         printf("\nACCCOUNT NMBER :%.0lf\n",acu_num);
         printf("\nTOTAL BALANCE :%d\n",amount);
         printf("--------------------------------------\n");
