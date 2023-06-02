@@ -35,6 +35,7 @@ struct info    ///structure///
     ///Get username and password from the user
     char inputUsername[MAX_LENGTH];
     char inputPassword[MAX_LENGTH];
+
     while(1)
     {
     printf("\n\t\tENTER USERNAME: ");
@@ -46,10 +47,15 @@ struct info    ///structure///
     ///Compare the input with stored username and password
     if (strcmp(person.username,inputUsername) == 0 && strcmp(person.password,inputPassword) == 0)
     {
-        
-        printf("<\n\n\t\tLogin successful! please wait>\n");
-        printf("\n\t\tUploading the next page...\n");
-        printf("\n----------------------------------------------------------\n");
+
+        printf("<\n\n\t\PASSWORD MATCH! LOADING>");
+        for(int i=0;i<=6;i++)
+        {
+            fordelay(100000000);
+            printf(".");
+        }
+
+        break;
 
     }
 
@@ -60,10 +66,14 @@ struct info    ///structure///
         printf("\n<Invalid username or password>....\n");
         printf("\n<please try again>....");
         printf("\n----------------------------------------------------------\n");
-      
+
 
     }
     }
 
 }
-
+void fordelay(int j)
+{   int i,k;
+    for(i=0;i<j;i++)
+         k=i;
+}
