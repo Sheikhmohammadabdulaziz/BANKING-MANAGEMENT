@@ -9,7 +9,6 @@ char password[MAX_LENGTH];
 int main()
 
 {
-   struct info person1;
     system("color 9"); ///COLOR THE SYSTEM///
     splash_screen();
     delay(3);          ///DELAY THE SYSTERM///
@@ -18,8 +17,6 @@ int main()
 
     int choice;
 
-    printf("\n\n \t\t\t\t\t WELCOME TO BANK 420\n");
-    printf("\t\t\t\t\t---------------------\n");
     login();
     delay(2);
     system("cls");
@@ -72,8 +69,10 @@ int main()
 }
    void menu()
 {
-    printf("\n \t\t     WELCOME TO THE MAIN MENU\n");
-    printf("\t\t    --------------------------\n");
+    printf("\n\n \t\t   WELCOME TO BANK 420\n");
+
+    printf("\n \t\t       THE MAIN MENU\n");
+    printf("\t\t ----------------------------\n");
     printf("\n\t\t[1].Deposit Money \t[2].Withdraw money \n");
     printf("\n\t\t[3].Transfer money \t[4].Account Details\n");
     printf("\n\t\t[5].Transaction details\t[6].Exit \n");
@@ -211,7 +210,7 @@ int main()
        void last_details()
 
     {
-        printf("\n\nNAME :SHEIKH MOHMMAD ABDUL AZIZ\n");
+        printf("\n\nNAME :SHEIKH MOHAMMAD ABDUL AZIZ\n");
         printf("\nACCCOUNT NMBER :%.0lf\n",acu_num);
         printf("\nTOTAL BALANCE :%d\n",amount);
         printf("--------------------------------------\n");
