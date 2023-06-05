@@ -1,3 +1,10 @@
+struct user {
+    char phone[50];
+    char ac[50];
+    char password[50];
+
+
+};
 
 
 int amount=1000000,wit_amount,trn_amount,dip_amount;
@@ -53,9 +60,15 @@ int main()
         break;
 
     case 6:
+        system("cls");
+        registation();
+        break;
+    case 7:
        system("cls");
         last_details();
         exit(0);
+
+
     default:
         system("cls");
         printf("\n\n..........................<INVALID CHOICE >...................\n");
@@ -75,7 +88,8 @@ int main()
     printf("\t\t ----------------------------\n");
     printf("\n\t\t[1].Deposit Money \t[2].Withdraw money \n");
     printf("\n\t\t[3].Transfer money \t[4].Account Details\n");
-    printf("\n\t\t[5].Transaction details\t[6].Exit \n");
+    printf("\n\t\t[5].Transaction details\t[6].Registation \n");
+    printf("\n\t\t[7].Exit\n");
 }
    void deposit_money()
 {
@@ -217,4 +231,27 @@ int main()
         printf("\npress any key to continue..........\n");
         getch();
     }
-
+  int registation()
+{
+    struct user usr,usr1;
+    FILE *fp;
+    char filename[50],phone[50],pword[50];
+    int opt,choice;
+    char cont = 'y';
+    float amount;
+        printf("Enter your account number:\t");
+        scanf("%s",usr.ac);
+        printf("Enter your phone number:\t");
+        scanf("%s",usr.phone);
+        printf("Enter your new password:\t");
+        scanf("%s",usr.password);
+        strcpy(filename,usr.phone);
+        fp = fopen(strcat(filename,".dat"),"w");
+        fwrite(&usr,sizeof(struct user),1,fp);
+        if(fwrite != 0){
+            printf("\n\nAccount succesfully registered");
+        }else {
+            printf("\n\nSomething went wrong please try again");
+        }
+        fclose(fp);
+}
