@@ -19,6 +19,7 @@
            printf (  "                         ##  ## #      #      #      #    # #    # #               \n");
            printf (  "                         #    # ###### ######  ####   ####  #    # ######          \n");
            printf ("\n\n");
+           printf("\t<INTRODUCING BANK 420, THE ULTIMATE MANAGEMENT SOFTWARE FOR STREAMLINED OPERATIONS AND UNMATCHED PERFORMANCE>");
 
 
 }
