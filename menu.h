@@ -125,7 +125,7 @@ int main()
         scanf("%d",&wit_amount);
         if(wit_amount>amount)
         {
-            printf("You dont have sufficient balance.");
+            printf("You dont have sufficient balance.\n");
         }
         else
 
